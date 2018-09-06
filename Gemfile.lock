@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/mmudge/mudge_view_tool
-  revision: 51534232f51c2a4bdf163d71ade6f3bc76330337
-  specs:
-    mudge_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,6 +104,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     msgpack (1.2.4)
+    mudge_view_tool (0.1.0)
     multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.8.4)
@@ -216,7 +211,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  mudge_view_tool!
+  mudge_view_tool (~> 0.1.0)
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
