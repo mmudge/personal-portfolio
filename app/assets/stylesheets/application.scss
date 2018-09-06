@@ -50,6 +50,7 @@ body {
  */
 .masthead {
   margin-bottom: 2rem;
+  width: 51rem;
 }
 
 .masthead-brand {
@@ -81,6 +82,7 @@ body {
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
+    width: 7em;
   }
   .nav-masthead {
     float: right;
