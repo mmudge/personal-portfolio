@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/mmudge/mudge_view_tool
+  revision: 51534232f51c2a4bdf163d71ade6f3bc76330337
+  specs:
+    mudge_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -210,6 +216,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mudge_view_tool!
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
