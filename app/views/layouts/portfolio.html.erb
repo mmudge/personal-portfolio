@@ -21,7 +21,8 @@
    <main role="main">
 
    <!-- start of masthead -->
-    <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
+    <%= render "shared/portfolio_masthead" %>
+    <!-- add if i dont want to see header when logged in as admin - unless logged_in?(:site_admin) -->
    <!-- end of masthead -->
     <%= yield %>
     </main>
