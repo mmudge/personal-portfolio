@@ -36,7 +36,7 @@
    <!-- end of top part (might remove) -->
  
 <!-- start of nav -->
-      <%= render 'shared/blog_nav' %>  
+    <%= render 'shared/blog_nav' %>  
   <!-- end of nav -->
 
     </div> <!-- first container div -->
@@ -46,16 +46,13 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
-            From Michael Mudge
-          </h3>
-          <h6>
-          <%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %></h6>
-        
-<!-- end of blog header -->
+  
+      <%= render 'shared/blog_masthead' %>  
 
-    <%= yield %>
-        </div>
+     <!-- end of blog header -->
+
+        <%= yield %>
+      </div> <!-- last blog head div has to be after yeild though -->
 
 <!-- start of sidebar -->
     <%= render 'shared/blog_sidebar' %>
@@ -66,12 +63,7 @@
     </main><!-- /.container -->
 
     <!-- start of footer -->
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+    <%= render 'shared/blog_footer' %>
     <!-- end of footer -->
 
     <%= source_helper("blog") %>
