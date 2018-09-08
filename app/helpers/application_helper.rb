@@ -40,14 +40,6 @@ module ApplicationHelper
     {
       url: portfolios_path,
       title: "Portfolio"
-    },
-    {
-      url: new_user_registration_path,
-      title: "Register"
-    },
-    {
-      url: new_user_session_path,
-      title: "Login"
     }
   ]
 
