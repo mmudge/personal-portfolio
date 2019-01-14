@@ -13,7 +13,10 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @page_title = @blog.title 
+    @blog = Blog.includes(:comments).friendly.find(params[:id])
+    @comment = Comment.new
+
+    @page_title = @blog.title
     @seo_keywords = @blog.body
   end
 
@@ -34,7 +37,7 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Shake n Bake, your blog is now live.' }
-       
+
       else
         format.html { render :new }
       end
@@ -68,8 +71,8 @@ class BlogsController < ApplicationController
       @blog.published!
     elsif @blog.published?
       @blog.draft!
-    end 
-    
+    end
+
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
 
