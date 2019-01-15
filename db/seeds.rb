@@ -1,3 +1,13 @@
+print "Cleaning DB"
+
+Blog.destroy_all
+Topic.destroy_all
+Technology.destroy_all
+Portfolio.destroy_all
+Skill.destroy_all
+
+puts "Done cleaning, now re populating with seeds"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -19,9 +29,11 @@ puts "10 blog posts created"
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
-    percent_utilized: 15
+    percent_utilized: rand(100)
     )
 end
+
+
 
 puts "5 skills created"
 
@@ -53,4 +65,7 @@ puts "9 portfolio items created"
     )
   end
 
-  puts "3 technologies created"
+puts "3 technologies created"
+
+puts "Done with seeds"
+
