@@ -168,7 +168,20 @@ body {
   padding: 30px;
 }
 
+.app-card-container {
+  color: gray;
+  text-align: left;
 
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  background-color: rgba(white, 0.9);
+}
+
+.app-card-container a {
+  color: gray;
+}
 
 
 
