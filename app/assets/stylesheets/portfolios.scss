@@ -2,7 +2,6 @@
 @import "jquery-ui";
 @import "gritter";
 
-
 :root {
   --jumbotron-padding-y: 3rem;
 }
@@ -30,6 +29,19 @@
 
 .jumbotron .container {
   max-width: 40rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer {
