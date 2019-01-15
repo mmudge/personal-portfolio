@@ -1,16 +1,105 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
 
-<hr>
+    <h1>About Me</h1>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "profilepic.jpg", width: 200, alt: "profile image" %>
-  </div>
+    <hr>
 
-  <div class="col-md-8">
-    <p>Passionate software developer dedicated to making website dreams into a reality, exceeding client expectations, and delivering projects on both time and budget.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profilepicture-round.png", width: 300, alt: "profile image" %>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+                >
 
-    <p>I've always loved computers and problem solving and have made my passion into my work.</p>
+              </div>
+            </div>
+          </div>
+
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <p>Passionate software developer dedicated to making website dreams into a reality, exceeding client expectations, and delivering projects on both time and budget.</p>
+
+        <p>I've always loved computers and problem solving and have made my passion into my work.</p>
+
+        <p>maybe write about my schooling, UA and le wagon, how im an american who relocated to the netherlands... etc</p>
+
+        <p>def add my skills Ruby on Rails | JavaScript </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#skillsAbout"
+            aria-expanded="false"
+            aria-controls="skillsAbout"
+              > Skills
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#educationHistory"
+            aria-expanded="false"
+            aria-controls="educationHistory"
+              > Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="educationHistory">
+            <div class="card card-block">
+              Le Wagon Coding Bootcamp
+            </div>
+            <div class="card card-block">
+              University of Arizona
+            </div>
+          </div>
+
+          <div class="collapse" id="skillsAbout">
+            <div class="card card-block">
+              Ruby on Rails
+            </div>
+            <div class="card card-block">
+              JavaScript
+            </div>
+             <div class="card card-block">
+              HTML & CSS/SCSS
+            </div>
+             <div class="card card-block">
+              Bootstrap
+            </div>
+             <div class="card card-block">
+              git & GitHub
+            </div>
+             <div class="card card-block">
+              SQL
+            </div>
+             <div class="card card-block">
+              Scrum
+            </div>
+            <div class="card card-block">
+              Heroku
+            </div>
+          </div>
+
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 

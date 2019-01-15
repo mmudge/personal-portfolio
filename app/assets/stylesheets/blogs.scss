@@ -3,14 +3,20 @@
 @import "gritter";
 
 /* stylelint-disable selector-list-comma-newline-after */
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.25rem;
 }
 
@@ -18,9 +24,6 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
 
 .display-4 {
   font-size: 2.5rem;
@@ -150,4 +153,13 @@ font-size: 2.5em;
   font-size: 0.8em;
   font-style: italic;
 
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
