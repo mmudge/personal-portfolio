@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
 
 :root {
   --jumbotron-padding-y: 3rem;
@@ -57,4 +58,10 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+.text-muted a {
+  font-size: 2rem;
+  color: white;
+  margin-right: 15px;
 }
