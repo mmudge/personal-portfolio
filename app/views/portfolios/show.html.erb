@@ -4,6 +4,7 @@
       <%= image_tag portfolio_img(@portfolio_item.main_image.url, 'main'), width: '100%' %>
     </div>
       <div class="col-md-5">
+        <%= link_to 'Back', portfolios_path %>
 
       <h1><%= @portfolio_item.title %></h1>
 
