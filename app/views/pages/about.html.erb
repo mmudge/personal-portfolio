@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profilepicture-round.png", width: 300, alt: "profile image" %>
-        <div class="skills">
+        <!-- <div class="skills">
           <% @skills.each do |skill| %>
           <div class="skill">
             <h4><%= skill.title %></h4>
@@ -26,13 +26,23 @@
           </div>
 
           <% end %>
+        </div> -->
+        <div class="contact-info-about">
+          <a href="mailto:michaeltmudge@gmail.com?subject=PortfolioContact" "Email Me">michaeltmudge@gmail.com</a>
+        </div>
+
+        <div class="social-links-contact">
+          <a href="https://github.com/mmudge"><%= fa_icon "github" %></a>
+          <a href="https://www.instagram.com/m_mudge/"><%= fa_icon "instagram" %></a>
+          <a href="https://twitter.com/mike84733340"><%= fa_icon "twitter" %></a>
+          <a href="https://www.linkedin.com/in/michaeltmudge/"><%= fa_icon "linkedin" %></a>
         </div>
       </div>
 
       <div class="col-md-8">
-        <p>In the last year software development has changed from a hobby of mine into a passion. I love building projects from the ground up, from wiring up the back end to implementing modern design on the front end. The main technologies I use to build project are Ruby on Rails and JavaScript, skills which I initially learned last year while attending <a href="www.lewagon.com">Le Wagon</a> Amsterdam and ever since I have continued learning on my own. </p>
+        <p>In the last year software development has changed from a hobby of mine into a passion. I love building projects from the ground up, from wiring up the back end to implementing modern design on the front end. The main technologies I use to build project are Ruby on Rails and JavaScript, skills which I initially learned last year while attending <a href="www.lewagon.com"><b>Le Wagon</b></a> Amsterdam and ever since I have continued learning on my own. </p>
 
-        <p>I am currently working free-lance and taking on new clients, however I’m also open to any new business opportunities. Please feel free to <%= link_to "contact me", contact_path %> if you would like more information.</p>
+        <p>I am currently looking for a full-time position as a junior to mid level developer. In the mean time I am working on freelance projects and self learning new technologies. I’m always open to new business opportunities. Please feel free to contact if you would like more information.</p>
 
 
         <p>

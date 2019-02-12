@@ -22,25 +22,17 @@ module ApplicationHelper
   def nav_items
   [
     {
-      url: root_path,
-      title: "Home"
-    },
-    {
       url: about_me_path,
-      title: "About Me"
-    },
-    {
-      url: contact_path,
-      title: "Contact"
+      title: "About"
     },
     {
       url: portfolios_path,
       title: "Portfolio"
     },
-    {
-      url: blogs_path,
-      title: "Blog"
-    },
+    # {
+    #   url: blogs_path,
+    #   title: "Blog"
+    # },
     {
       url: tech_news_path,
       title: "Tech News"
@@ -74,17 +66,5 @@ module ApplicationHelper
   def alert_generator msg
     js add_gritter(msg, title: "Michael Mudge Portfolio", sticky: false)
   end
-
-
-
-
-
-
-
-
-
-
-
-
 
 end

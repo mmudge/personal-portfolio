@@ -63,6 +63,11 @@ a:hover {
   font-weight: bold;
 }
 
+#btn-custom-homepage {
+  background: #0056A9;
+  color: white;
+}
+
 
 /*
  * Header
@@ -190,7 +195,7 @@ a:hover {
 }
 
 #tech-news-title {
-  margin: 40px 0px;
+  margin: 40px 0px 0px 0px;
 }
 
 .app-card-container {
@@ -228,9 +233,28 @@ a:hover {
 
 .social-links-contact {
   font-size: 2.5em;
+  text-align: center;
 
 }
 
 .social-links-contact a {
   margin-right: 18px;
+
+  a:hover {
+    color: #0056A9;
+  }
+}
+
+.contact-info-about {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+
+  > a {
+    font-size: 1.25em;
+  }
+}
+
+.nav > a {
+  margin-left: 8px;
 }
