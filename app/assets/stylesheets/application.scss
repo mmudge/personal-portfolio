@@ -47,7 +47,7 @@ h6, .h6{
 }
 
 .cover-container {
-  max-width: 65em;
+  max-width: 68em;
 }
 
 a {
@@ -55,17 +55,6 @@ a {
 }
 
 
-
-
-/*
- * Header
- */
-
-
-
-/*
- * Cover
- */
 .cover {
   padding: 0 1.5rem;
 }
@@ -82,26 +71,20 @@ a {
   color: rgba(255, 255, 255, .5);
 }
 
-/*
- * Custom Styles
- */
+.card-body {
+color: #17252A;
+text-align: left;
+}
+.auth-links a {
+color: black;
+}
 
- .card-body {
-  color: black;
-  text-align: left;
- }
- .auth-links a {
-  color: black;
- }
+.register-text {
+text-align: right;
+}
 
- .register-text {
-  text-align: right;
- }
-
-.login > .card {
-  width: 22rem;
-  margin: 0 auto;
-  float: none;
+.padding-about-text {
+  padding: 25px;
 }
 
 
@@ -117,7 +100,7 @@ a {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('background-bryce.JPG') no-repeat;
+  background: image-url('bg-bg.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -153,7 +136,12 @@ a {
 
 .app-card-container > .card {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 1.0);
+
+  > h1 {
+    border-bottom: 3px solid #3AAFA9;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+  }
 }
 
 .app-card-container a {
@@ -181,15 +169,14 @@ a {
 .social-links-contact {
   font-size: 2.5em;
   text-align: center;
-
 }
 
 .social-links-contact a {
   margin-right: 18px;
+}
 
-  a:hover {
-    color: #0056A9;
-  }
+.social-links-contact a:hover {
+  color: #3AAFA9;
 }
 
 .contact-info-about {
@@ -202,9 +189,11 @@ a {
   }
 }
 
-.skills-home .card-block{
-  margin: 5px auto;
-  color: black;
+#skillsAbout .card {
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2px solid #3AAFA9;
+  text-align: center;
 }
 
 .social-links-footer {
@@ -213,4 +202,8 @@ a {
   a {
     margin: 0px 5px;
   }
+}
+
+.social-links-footer a:hover {
+  color: #3AAFA9;
 }

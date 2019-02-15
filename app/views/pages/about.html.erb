@@ -3,8 +3,6 @@
 
     <h1>About Me</h1>
 
-    <hr>
-
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profilepicture-round.png", width: 300, alt: "profile image" %>
@@ -42,7 +40,7 @@
         </div>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-8 padding-about-text">
         <p>In the last year software development has changed from a hobby of mine into a passion. I love building projects from the ground up, from wiring up the back end and working with the database to implementing modern JavaScript and design on the front end. The main technologies I use to build project are Ruby on Rails 5 and JavaScript ES6+, skills which I initially learned last year while attending <a href="www.lewagon.com"><b>Le Wagon</b></a> Amsterdam and ever since I have continued learning on my own. </p>
 
         <p>I am currently looking for a full-time position as a junior to mid level developer. In the mean time I am working on freelance projects and self learning new technologies. I’m always open to new business opportunities. Please feel free to contact if you would like to have a chat or want more information.</p>
@@ -50,7 +48,7 @@
 
         <p>
           <button
-            class="btn btn-primary"
+            class="aboutpage-btn portfolio-btn"
             type="button"
             data-toggle="collapse"
             data-target="#skillsAbout"
@@ -60,7 +58,7 @@
           </button>
 
           <button
-            class="btn btn-primary"
+            class="aboutpage-btn portfolio-btn"
             type="button"
             data-toggle="collapse"
             data-target="#educationHistory"
@@ -82,13 +80,10 @@
 
           <div class="collapse" id="skillsAbout">
             <div class="card card-block">
-              JavaScript ES6+
-            </div>
-            <div class="card card-block">
-              AJAX
-            </div>
-            <div class="card card-block">
               Ruby on Rails 5 (including Active Storage and Action Cable)
+            </div>
+            <div class="card card-block">
+              JavaScript ES6+
             </div>
             <div class="card card-block">
               MVC Design Pattern
