@@ -1,10 +1,19 @@
-<body class="text-center">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand"><%= link_to "Michael Mudge", root_path  %></h3>
-      <nav class="nav nav-masthead justify-content-center app-nav">
-        <%= nav_helper "nav-link", "span" %>
-      </nav>
-    </div>
-  </header>
-</body>
+
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">
+      <%= link_to root_path do %>
+      <%= fa_icon "globe" %>
+        <% end %>
+      </h3>
+    <nav class="nav nav-masthead">
+
+      <span><%= link_to "PORTFOLIO", portfolios_path, class: 'nav-link' %></span>
+      <span><%= link_to "ABOUT", about_me_path, class: 'nav-link' %></span>
+      <span><%= link_to "TECH NEWS", tech_news_path, class: 'nav-link'  %></span>
+    </nav>
+  </div>
+</header>
+
+
+
