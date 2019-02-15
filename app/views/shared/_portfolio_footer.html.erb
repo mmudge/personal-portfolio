@@ -1,11 +1,13 @@
-<footer class="text-muted">
+<footer id="portfolio-footer">
   <div class="container">
-    <p class="float-right">
-      <%= link_to "View All Portfolio Items", portfolios_path %> /
-      <a href="#">Back to top</a>
-    </p>
-    <p>
-      <%= copyright_generator %>
-    </p>
+    <div class="text-center">
+      <div><%= copyright_generator %></div>
+      <div class="social-links-contact">
+        <a href="https://github.com/mmudge"><%= fa_icon "github" %></a>
+        <a href="https://www.instagram.com/m_mudge/"><%= fa_icon "instagram" %></a>
+        <a href="https://twitter.com/mike84733340"><%= fa_icon "twitter" %></a>
+        <a href="https://www.linkedin.com/in/michaeltmudge/"><%= fa_icon "linkedin" %></a>
+      </div>
+    </div>
   </div>
 </footer>
