@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "gritter";
 @import "font-awesome";
+@import "pages";
 
 /*
  * Globals
@@ -32,14 +33,13 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;;
 }
 
 body {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
 h1, .h1,
@@ -48,7 +48,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
 }
 
 .cover-container {
@@ -59,14 +59,7 @@ a {
   text-decoration: none !important;
 }
 
-a:hover {
-  font-weight: bold;
-}
 
-#btn-custom-homepage {
-  background: #0056A9;
-  color: white;
-}
 
 
 /*
@@ -171,8 +164,9 @@ a:hover {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('background-bryce.JPG') no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .app-footer {
