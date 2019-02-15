@@ -1,62 +1,15 @@
-<main role="main" class="inner cover">
-  <h1 class="cover-heading">Welcome</h1>
-  <p class="lead">Software development has changed from a hobby into a passion of mine. Everyday I am working to increase my knowledge and skills in all aspects of development. Presented here is a display of my work, please take a look around!</p>
+<main role="main" id="homepage-content" class="inner cover">
+  <h1 class="cover-heading">Michael Mudge</h1>
   <p class="lead">
-    <%= link_to "Portfolio", portfolios_path,  class: "btn btn-lg btn-primary" %>
 
-          <button
-            class="btn btn-lg btn-warning text-white"
-            type="button"
-            data-toggle="collapse"
-            data-target="#skillsAbout"
-            aria-expanded="false"
-            aria-controls="skillsAbout"
-              > Skills
-          </button>
+  <span><em>Websites - Web Apps - Software Development</em></span>
 
-    <%= link_to "Details", about_me_path, class: "btn btn-lg btn-info" %>
+</p>
+  <div class="heading-buttons">
+    <%= link_to "PORTFOLIO", portfolios_path,  class: "homepage-btn portfolio-btn" %>
 
-
-          <div class="collapse skills-home" id="skillsAbout">
-            <div class="card card-block">
-              JavaScript ES6+
-            </div>
-            <div class="card card-block">
-              AJAX
-            </div>
-            <div class="card card-block">
-              Ruby on Rails 5 (including Active Storage and Action Cable)
-            </div>
-            <div class="card card-block">
-              MVC Design Pattern
-            </div>
-             <div class="card card-block">
-              HTML5 & CSS3 (& SCSS)
-            </div>
-             <div class="card card-block">
-              Bootstrap 4
-            </div>
-             <div class="card card-block">
-              git & GitHub
-            </div>
-             <div class="card card-block">
-              SQL & Database Management
-            </div>
-             <div class="card card-block">
-              Scrum and Agile Work Flows
-            </div>
-            <div class="card card-block">
-              Heroku
-            </div>
-            <div class="card card-block">
-              Web Design with Figma and Sketch
-            </div>
-            <div class="card card-block">
-              AWS S3
-            </div>
-          </div>
-
-         </p>
+    <%= link_to "ABOUT ME", about_me_path, class: "homepage-btn about-btn" %>
+  </div>
 </main>
 
 
