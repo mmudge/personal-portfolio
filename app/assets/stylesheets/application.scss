@@ -1,14 +1,10 @@
 @import "bootstrap";
 @import "gritter";
 @import "font-awesome";
-@import "pages";
-@import "nav";
+@import "pages/index";
+@import "components/index";
 
-/*
- * Globals
- */
 
-/* Links */
 a,
 a:focus,
 a:hover {
@@ -28,7 +24,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif;;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -54,7 +50,6 @@ a {
   text-decoration: none !important;
 }
 
-
 .cover {
   padding: 0 1.5rem;
 }
@@ -63,33 +58,37 @@ a {
   font-weight: 700;
 }
 
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
-}
-
 .card-body {
-color: #17252A;
-text-align: left;
+  color: #17252A;
+  text-align: left;
 }
+
 .auth-links a {
-color: black;
+  color: black;
 }
 
 .register-text {
-text-align: right;
+  text-align: right;
 }
-
-.padding-about-text {
-  padding: 25px;
-}
-
-
 
 #background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  // background: image-url('bg-bg.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#background-about {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -105,117 +104,6 @@ text-align: right;
   background-position: center;
 }
 
-.app-footer {
-  color: white;
-  margin: 2rem 0px;
-}
 
-#centerTechNews {
-  margin: 0 auto;
-}
-
-.tech-news {
-  color: #343A35;
-  margin: 10px 20px;
-  text-shadow: none;
-}
-
-.tech-news a {
-  color: #3AAFA9;
-}
-
-.tech-news > .card {
-  padding: 30px;
-  color: #17252A;
-  background-color: #DEF2F1;
-  border: 2px solid #3AAFA9;
-  width: 700px;
-  height: 150px;
-}
-
-#tech-news-title {
-  margin: 40px 0px 0px 0px;
-  text-align: center;
-}
-
-.app-card-container {
-  color: #343A35;
-  text-align: left;
-  text-shadow: none;
-}
-
-.app-card-container > .card {
-  padding: 40px;
-
-  > h1 {
-    border-bottom: 3px solid #3AAFA9;
-    margin-bottom: 45px;
-    padding-bottom: 15px;
-  }
-}
-
-.app-card-container a {
-  color: black;
-}
-
-.app-card-container p {
-  font-size: 20px;
-}
-
-.card-block {
-  margin: 5px 0px;
-  padding: 5px;
-  width: 275px;
-}
-
-.skill {
-  margin: 10px 0px;
-}
-
-.card-margin {
-  margin-top: 30px;
-}
-
-.social-links-contact {
-  font-size: 2.5em;
-  text-align: center;
-}
-
-.social-links-contact a {
-  margin-right: 18px;
-}
-
-.social-links-contact a:hover {
-  color: #3AAFA9;
-}
-
-.contact-info-about {
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-
-  > a {
-    font-size: 1.25em;
-  }
-}
-
-#skillsAbout .card {
-  color: #17252A;
-  background-color: #DEF2F1;
-  border: 2px solid #3AAFA9;
-  text-align: center;
-}
-
-.social-links-footer {
-  font-size: 1.5em;
-
-  a {
-    margin: 0px 5px;
-  }
-}
-
-.social-links-footer a:hover {
-  color: #3AAFA9;
-}
 
 

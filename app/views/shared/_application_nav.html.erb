@@ -1,16 +1,26 @@
-
 <header class="masthead mb-auto">
   <div class="inner">
     <h3 class="masthead-brand">
       <%= link_to root_path do %>
-      <%= fa_icon "globe" %>
-        <% end %>
-      </h3>
+        <%= fa_icon "globe" %>
+      <% end %>
+    </h3>
     <nav class="nav nav-masthead">
-
       <span><%= link_to "PORTFOLIO", portfolios_path, class: 'nav-link' %></span>
       <span><%= link_to "ABOUT", about_me_path, class: 'nav-link' %></span>
       <span><%= link_to "TECH NEWS", tech_news_path, class: 'nav-link'  %></span>
+      <% if current_user.is_a?(GuestUser) %>
+      <span>
+        <%= link_to "SIGN UP", new_user_registration_path, class: 'nav-link' %>
+      </span>
+      <span>
+        <%= link_to "LOGIN", new_user_session_path, class: 'nav-link' %>
+      </span>
+      <% else %>
+      <span>
+        <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, class: 'nav-link'  %>
+      </span>
+      <% end %>
     </nav>
   </div>
 </header>

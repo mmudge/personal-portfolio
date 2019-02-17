@@ -1,0 +1,65 @@
+.padding-about-text {
+  padding: 25px;
+}
+
+.app-card-container {
+  color: #343A35;
+  text-align: left;
+  text-shadow: none;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+
+  > h1 {
+    border-bottom: 3px solid #3AAFA9;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+  }
+}
+
+.app-card-container a {
+  color: black;
+}
+
+.app-card-container p {
+  font-size: 20px;
+}
+
+.card-block {
+  margin: 5px 0px;
+  padding: 5px;
+  width: 275px;
+}
+
+.skill {
+  margin: 10px 0px;
+}
+
+.card-margin {
+  margin-top: 30px;
+}
+
+.contact-info-about {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+
+  > a {
+    font-size: 1.25em;
+  }
+}
+
+#skillsAbout .card {
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2px solid #3AAFA9;
+  text-align: center;
+}
+
+#educationHistory .card {
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2px solid #3AAFA9;
+  text-align: center;
+}

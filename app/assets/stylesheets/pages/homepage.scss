@@ -1,0 +1,85 @@
+#homepage-content {
+  height: 325px;
+}
+
+.cover-heading {
+  color: white;
+  font-size: 84px;
+  font-family: 'Bree Serif', serif;
+  font-weight: 200;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  margin-bottom: -3px;
+}
+
+.lead {
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  margin-bottom: 40px;
+
+  i span {
+    font-weight: lighter;
+  }
+}
+
+.homepage-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 4.75px;
+  padding: 10px 45px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  box-shadow: 0.5px 0.05rem .1rem rgba(#17252A, 0.8);
+}
+
+.aboutpage-btn {
+  width: 200px;
+  height: 100%;
+  border-radius: 4.75px;
+  padding: 10px 45px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.portfolio-btn {
+  text-shadow: none;
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2.5px solid #3AAFA9;
+}
+
+.portfolio-btn:hover {
+  color: #17252A;
+  background-color: #3AAFA9;
+  border: 2.5px solid #DEF2F1;
+}
+
+
+
+.about-btn {
+  color: #DEF2F1;
+  background-color: #3AAFA9;
+  border: 2.5px solid #DEF2F1;
+}
+
+.about-btn:hover {
+  text-shadow: none;
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2.5px solid #3AAFA9;
+
+}
+
+.heading-buttons a {
+  margin: 0px 10px;
+}
+
+.travel-pics-text {
+  font-size: 12px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+
+}
+

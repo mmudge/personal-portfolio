@@ -1,0 +1,27 @@
+#centerTechNews {
+  margin: 0 auto;
+}
+
+.tech-news {
+  color: #343A35;
+  margin: 10px 20px;
+  text-shadow: none;
+}
+
+.tech-news a {
+  color: #3AAFA9;
+}
+
+.tech-news > .card {
+  padding: 30px;
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2px solid #3AAFA9;
+  width: 700px;
+  height: 150px;
+}
+
+#tech-news-title {
+  margin: 40px 0px 0px 0px;
+  text-align: center;
+}
