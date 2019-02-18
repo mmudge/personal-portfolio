@@ -40,7 +40,12 @@
 
 .card-tech-used {
   text-align: right;
-  color: #3AAFA9;
+  color: #17252A;
+  font-size: 13px;
+
+  p {
+    margin-bottom: 0px;
+  }
 }
 .card {
   position: relative;

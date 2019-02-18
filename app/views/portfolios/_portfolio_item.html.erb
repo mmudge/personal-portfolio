@@ -3,20 +3,23 @@
     <!-- <img class="card-img-top" for next img tag -->
     <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), width: '100%', height: '200px' %>
     <div class="card-body">
-      <p class="card-text">
-        <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
-        <%= portfolio_item.subtitle%></p>
-
-        <% if portfolio_item.technologies %>
-
-          <% portfolio_item.technologies.first(2).each do |tech| %>
-             <div class="light-text"><%= tech.name %></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item), class: "card-text" %>
+          <p class="card-text"><em><%= portfolio_item.subtitle%></em></p>
+        </div>
+        <div class="col-sm-6 card-tech-used">
+          <% if portfolio_item.technologies %>
+            <!-- <p>Tech Used:</p> -->
+            <% portfolio_item.technologies.first(2).each do |tech| %>
+              <p ><%= tech.name %></p>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
 
 
-      <div class="d-flex justify-content-between align-items-center">
-      </div>
+
+      </div> <!-- row -->
     </div>
   </div>
 </div>
