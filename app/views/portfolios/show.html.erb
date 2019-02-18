@@ -5,6 +5,8 @@
     </div>
       <div class="col-md-5">
         <%= link_to 'Back', portfolios_path %>
+        <%= link_to fa_icon('pencil-square-o'), edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %>
+         <%= link_to fa_icon('trash'), @portfolio_item, method: :delete, data: {confirm: 'Delete Portfolio Item?'} if logged_in?(:site_admin) %>
 
       <h1><%= @portfolio_item.title %></h1>
 
@@ -15,16 +17,11 @@
       <hr>
 
       <h3>Technologies Used:</h3>
-
-      <% @portfolio_item.technologies.each do |t| %>
-      <p><%= t.name %></p>
+      <div class="show-tech-used">
+        <% @portfolio_item.technologies.each do |t| %>
+          <p><%= t.name %><p>
       <% end %>
-
-      <% if logged_in?(:site_admin) %>
-        <div class="">
-          <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
-        </div>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>
