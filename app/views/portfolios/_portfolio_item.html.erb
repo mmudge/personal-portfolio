@@ -10,8 +10,8 @@
     <div class="card-body">
       <div class="row">
         <div class="col-sm-6">
-          <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item), class: "card-text" %>
-          <p class="card-text"><em><%= portfolio_item.subtitle%></em></p>
+          <p class="port-title"><b><%= portfolio_item.title %></b></p>
+          <p class="port-desc"><em><%= portfolio_item.subtitle%></em></p>
         </div>
         <div class="col-sm-6 card-tech-used">
           <% if portfolio_item.technologies %>
