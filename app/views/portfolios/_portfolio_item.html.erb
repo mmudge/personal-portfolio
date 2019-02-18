@@ -1,21 +1,30 @@
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm" data-id="<%= portfolio_item.id %>">
+    <%= link_to "", portfolio_show_path(portfolio_item), class: 'card-link' %>
+    <div class="card-edit-delete">
+      <%= link_to fa_icon('pencil-square-o'), edit_portfolio_path(portfolio_item) if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('trash'), portfolio_item, method: :delete, data: {confirm: 'Delete Portfolio Item?'} if logged_in?(:site_admin) %>
+    </div>
     <!-- <img class="card-img-top" for next img tag -->
     <%= image_tag portfolio_img(portfolio_item.thumb_image.url, 'thumb'), width: '100%', height: '200px' %>
     <div class="card-body">
-      <p class="card-text">
-        <span><%=  link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
-        <%= portfolio_item.subtitle%></p>
+      <div class="row">
+        <div class="col-sm-6">
+          <%= link_to portfolio_item.title, portfolio_show_path(portfolio_item), class: "card-text" %>
+          <p class="card-text"><em><%= portfolio_item.subtitle%></em></p>
+        </div>
+        <div class="col-sm-6 card-tech-used">
+          <% if portfolio_item.technologies %>
 
-        <% if portfolio_item.technologies %>
-          <% portfolio_item.technologies.first(2).each do |tech| %>
-             <div class="light-text"><%= tech.name %></div>
+            <% portfolio_item.technologies.first(2).each do |tech| %>
+              <p ><%= tech.name %></p>
+            <% end %>
           <% end %>
-        <% end %>
-
-
-      <div class="d-flex justify-content-between align-items-center">
+        </div>
       </div>
+
+
+
     </div>
   </div>
 </div>

@@ -16,10 +16,6 @@ class PortfoliosController < ApplicationController
     render nothing: true
   end
 
-  def angular
-    @angular_portfolio_items = Portfolio.angular
-  end
-
   def new
     @portfolio_item = Portfolio.new
   end
@@ -31,14 +27,14 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live!' }
-       
+
       else
         format.html { render :new }
       end
     end
   end
 
-  
+
   def edit
   end
 
@@ -68,9 +64,9 @@ class PortfoliosController < ApplicationController
   private
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, 
-                                      :subtitle, 
-                                      :body, 
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body,
                                       :main_image,
                                       :thumb_image,
                                       technologies_attributes: [:id, :name, :_destroy]
@@ -82,4 +78,4 @@ class PortfoliosController < ApplicationController
   end
 
 
-end 
+end

@@ -1,0 +1,34 @@
+@import 'indexpage';
+@import 'show';
+@import 'footer';
+@import 'nav';
+@import 'buttons';
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #17252A;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  font-family: 'Bree Serif', serif;
+  color: #17252A;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+a {
+  text-decoration: none !important;
+  color: #3AAFA9;
+}

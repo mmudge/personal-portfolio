@@ -1,0 +1,36 @@
+.portfolio-container {
+  padding-top: 30px;
+}
+
+.homepage-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 4.75px;
+  padding: 10px 45px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.portfolio-btn {
+  text-shadow: none;
+  color: #17252A;
+  background-color: #DEF2F1;
+  border: 2.5px solid #3AAFA9;
+}
+
+.portfolio-btn:hover {
+  color: #17252A;
+  background-color: #3AAFA9;
+  border: 2.5px solid #DEF2F1;
+}
+
+.portfolio-container h1 {
+  border-bottom: 3px solid #3AAFA9;
+  padding-bottom: 15px;
+}
+
+.show-tech-used {
+  p {
+    margin-bottom: 0px;
+  }
+}
