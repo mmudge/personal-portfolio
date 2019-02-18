@@ -126,4 +126,31 @@ a {
 
 .card-body {
   border-right: 3px solid #3AAFA9;
+  color: #17252A;
 }
+
+.light-text {
+  text-align: right;
+  color: #3AAFA9;
+}
+.card {
+  position: relative;
+}
+
+.card-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+  // &:hover {
+  //   .card-img {
+  //     border-bottom: 2px solid #3AAFA9;
+  //   }
+  // }

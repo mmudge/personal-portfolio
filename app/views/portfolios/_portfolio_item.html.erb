@@ -5,12 +5,12 @@
     <div class="card-body">
       <p class="card-text">
         <span><%=  link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
-              <%= portfolio_item.subtitle%></p>
+        <%= portfolio_item.subtitle%></p>
 
         <% if portfolio_item.technologies %>
-          <p><% portfolio_item.technologies.first(2).each do |tech| %>
-            <em><%= tech.name %></em>
-          <% end %></p>
+          <% portfolio_item.technologies.first(2).each do |tech| %>
+             <div class="light-text"><%= tech.name %></div>
+          <% end %>
         <% end %>
 
 
