@@ -63,3 +63,11 @@
   border: 2px solid #3AAFA9;
   text-align: center;
 }
+
+
+#le-wagon-button {
+
+  &:hover {
+    color: red;
+  }
+}
